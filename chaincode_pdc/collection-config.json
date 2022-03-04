@@ -1,0 +1,26 @@
+[{
+        "name": "HDFCMSPUserCollection",
+        "policy": "OR('HDFCMSP.member')",
+        "requiredPeerCount": 0,
+        "maxPeerCount": 1,
+        "blockToLive": 3,
+        "memberOnlyRead": true,
+        "memberOnlyWrite": true,
+        "endorsementPolicy": {
+            "signaturePolicy": "OR('HDFCMSP.member')"
+        }
+    },
+    {
+        "name": "SBIMSPUserCollection",
+        "policy": "OR('SBIMSP.member')",
+        "requiredPeerCount": 0,
+        "maxPeerCount": 1,
+        "blockToLive": 3,
+        "memberOnlyRead": true,
+        "memberOnlyWrite": true,
+        "endorsementPolicy": {
+            "signaturePolicy": "OR('SBIMSP.member')"
+        }
+    }
+
+]
